@@ -1,0 +1,494 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@r00t254 
+WayneMusungu
+/
+Patanisho
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Patanisho/index.html
+@WayneMusungu
+WayneMusungu Merge branch 'master' into ollll
+Latest commit 47cceab on Mar 25
+ History
+ 2 contributors
+@WayneMusungu@Olliemint
+465 lines (424 sloc)  19.7 KB
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/styles.css">
+    <script src="https://kit.fontawesome.com/bbb7424702.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <title>Patanisho</title>
+</head>
+
+<body>
+   <nav>
+        <div class="container">
+            <h2 class="log">
+                Patanisho
+            </h2>
+
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Search for creators, inspirations, and projects">
+            </div>
+            <div class="create">
+                <label class="btn btn-primary" for="create-post" id="btn6">Add Story</label>
+                <div class="profile-photo">
+                    <img src="./images/Main profile.jpg">
+                </div>
+                
+                <button id="menu-btn"><i class="uil uil-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <div class="container">
+            <div class="left">
+                <a class="profile">
+                    <div class="profile-photo">
+                        <img src="./images/Main profile.jpg">
+                    </div>
+                    <div class="handle">
+                        <h4>Eva Wangari</h4>
+                        <p class="text-muted">
+                            @wangari
+                        </p>
+                    </div>
+                </a>
+
+                <span id="close-btn"><i class="uil uil-multiply"></i></span>
+
+                <div class="sidebar">
+                    <a class="menu-item active">
+                        <span><i class="uil uil-home"></i></span><h3>Home</h3>
+                    </a>
+                   
+                    <a class="menu-item" id="notifications">
+                        <span><i class="uil uil-bell"><small class="notification-count">6</small></i></span><h3>Notifications</h3>
+                        <div class="notifications-popup">
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/Kyle.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Kyle Kariuki</b> accepted your friend request
+                                    <small class="text-muted">2 DAYS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/Belinda Jeruto.jpeg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Belinda Jeruto</b> commented on your post
+                                    <small class="text-muted">2 HOUR AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/Lupita.jpeg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Lupita</b> and <b>74 others </b> liked your post
+                                    <small class="text-muted">1 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/Felix Wahome.jpeg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Felix Wahome</b> commented on a post you are tagged in
+                                    <small class="text-muted">1 DAYS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/Mercy Okolla.jpeg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Mercy Okolla</b> commented on a post you are tagged in
+                                    <small class="text-muted">1 HOUR AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/profile-7.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Trevor Lemaiyan</b> commented on your post
+                                    <small class="text-muted">1 HOUR AGO</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="menu-item" id="messages-notification">
+                        <span><i class="uil uil-envelope-alt"><small class="notification-count">6</small></i></span><h3>Messages</h3>
+                    </a>
+                    
+                    <a class="menu-item" id="theme">
+                        <span><i class="uil uil-palette"></i></span><h3>Theme</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-setting"></i></span><h3>Settings</h3>
+                    </a>                        
+                </div>
+                <label for="create-post" class="btn btn-primary">Create Post</label>
+            </div>
+
+
+
+            <div class="middle">
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/Main profile.jpg">
+                        </div>
+                        <p class="name">Your Story</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="/images/Mercy Okolla.jpeg">
+                        </div>
+                        <p class="name">Lilian Njeri
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="/images/Trevor lemaiyan.jpeg">
+                        </div>
+                        <p class="name">Salim Hussein</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/OL.jpg">
+                        </div>
+                        <p class="name">Gibson meli</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/Lupita.jpeg">
+                        </div>
+                        <p class="name">Mary Auma</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="/images/Felix Wahome.jpeg">
+                        </div>
+                        <p class="name">Oscar Okolla</p>
+                    </div>
+                </div>
+                <form class="create-post">
+                    <div class="profile-photo">
+                        <img src="./images/Main profile.jpg">
+                    </div>
+                    <input type="text" placeholder="What's up Eva?" id="create-post" required>
+
+                    <input type="submit" value="Post" class="btn btn-primary" id="btn5">
+                    
+                </form>
+                <div>
+                    <p id="post1"></p>
+                </div>
+
+                <div class="feeds">
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/feed 01.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Alli Salim</h3>
+                                    <small>Mombasa, 1 HOUR AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="./images/feed 01.jpg">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="./images/Belinda Jeruto.jpeg"></span>
+                            <span><img src="./images/eliza.jpeg"></span>
+                            <span><img src=""></span>
+                            <p>Liked by <b>Tim 254</b> and <b>900 likes others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Rose Mj</b> Wow i love the sMILE. <span class="harsh-tag">#lifestyle</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 50 comments</div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/Mercy Okolla.jpeg">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Mercy Okolla</h3>
+                                    <small>Kisumu, 1 HOURS AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="./images/Mercy Okolla.jpeg">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-solid fa-face-grin-hearts" style="color: orange;" id="love"></i></span>
+                                <span><i class="fa-solid fa-message-smile" style="color: orange;"></i></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="./images/profile-10.jpg"></span>
+                            <span><img src="./images/profile-4.jpg"></span>
+                            <span><img src="./images/profile-15.jpg"></span>
+                            <p>Liked by <b>Silas</b> and <b>6 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Sheila wambui</b> wow i love your hairstyle. <span class="harsh-tag"></span></p>
+                        </div>
+                        <div class="comments text-muted">View all 10 comments</div>
+                    </div>
+                    
+                    
+                   
+                    
+                </div>
+            </div>
+
+
+            <div class="right">
+                <div id="pop">
+                   <div class="music">
+                    <ul>
+                        <li><i class="fa-solid fa-music fa-3x" style="color: #6E50E7;"></i></li>
+                       
+                    </ul>
+                   </div>
+                   <div class="camera">
+                       <ul>
+                           <li><i class="fa-solid fa-camera fa-3x" style="color: #6E50E7;"></i></li>
+                       </ul>
+                   </div>
+                  >
+                </div>
+                
+                <div class="messages">
+                    <div class="heading">
+                        <h4>Messages</h4><i class="uil uil-edit"></i>
+                    </div>
+                    <div class="search-bar">
+                        <i class="uil uil-search"></i>
+                        <input type="search" placeholder="Search messages" id="message-search">
+                    </div>
+                    <div class="category">
+                        <h6 class="active">Primary</h6>
+                        <h6>General</h6>
+                        <h6 class="message-requests">Requests(2)</h6>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/smiling.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Sharon Mumbi</h5>
+                            <p class="text-muted">Just woke now</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/wanjugu.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Felisha Wakio</h5>
+                            <p class="text-bold">I hope you enjoyed your weekend</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/feed 02.jpeg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Wang'ombe Wanjugu </h5>
+                            <p class="text-bold">Lol</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/Victor Muvaka.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Victor Muvaka</h5>
+                            <p class="text-bold">Pick up your Phone</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/Larry Madowo.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Larry Madowo</h5>
+                            <p class="text-muted">lol u right</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/Alli Salim.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Alli Salim</h5>
+                            <p class="text-bold">See you soon!</p>
+                        </div>
+                    </div>
+                </div>
+
+
+|                <div class="friend-requests">
+                    <h4>Requests</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/eliza.jpeg">
+                            </div>
+                            <div>
+                                <h5>Elizabeth Njeri</h5>
+                                <p class="text-muted">2 mutual friends</p>
+                                <p id="decline"></p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary" id="btn1">Accept</button>
+                            <button class="btn" id="btn2">Decline</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/priscillah.jpg">
+                            </div>
+                            <div>
+                                <h5>Chris Mulwa</h5>
+                                <p class="text-muted">100 mutual friends</p>
+                                <p id="decline2"></p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary" id="btn3">Accept</button>
+                            <button class="btn" id="btn4">Decline</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+ <div class="customize-theme">
+    <div class="card">
+        <h2>Customize your view</h2>
+        <p class="text-muted">Manage your font size, color, and background.</p>
+
+        <div class="font-size">
+            <h4>Font Size</h4>
+            <div>
+                <h6>Aa</h6>
+            <div class="choose-size">
+                <span class="font-size-1"></span>
+                <span class="font-size-2"></span>
+                <span class="font-size-3"></span>
+                <span class="font-size-4"></span>
+                <span class="font-size-5"></span>
+            </div>
+            <h3>Aa</h3>
+            </div>
+        </div>
+
+        <div class="color">
+            <h4>Color</h4>
+            <div class="choose-color">
+            <span class="color-1 active"></span>
+            <span class="color-2"></span>
+            <span class="color-3"></span>
+            <span class="color-4"></span>
+            <span class="color-5"></span>
+            </div>
+        </div>
+
+        <div class="background">
+            <h4>Background</h4>
+            <div class="choose-bg">
+                <div class="bg-1 active">
+                    <span></span>
+                    <h5 for="bg-1">Light</h5>
+                </div>
+                <div class="bg-2">
+                    <span></span>
+                    <h5>Dim</h5>
+                </div>
+                <div class="bg-3">
+                    <span></span>
+                    <h5 for="bg-3">Lights Out</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./Js/scripts.js"></script>
+</body>
+
+</html>
